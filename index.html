@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header>
+    <img src="infosys.png" alt="Infosys" style="width:100px;height:px;"align="left"><h1></h1>
+    <h1>Japan Dashboard</h1><h1></h1><h1></h1><h1></h1><h1></h1><h1></h1><h1></h1><h1></h1><h1></h1><h1></h1><h1></h1>
+    <h1></h1><h1></h1><h1></h1><h1></h1><h1></h1><h1></h1><h1></h1><h1></h1><h1></h1><h1></h1><h1></h1><h1></h1>
+    <nav>
+        <ul>
+            <li><a href="#">Talent Dashboard</a></li>
+            <li><a href="#">Financial Dashboard</a></li>
+            <li><a href="#">Operations Dashboard</a></li>
+            <li><a href="#">Initiatives</a></li>
+            <li><a href="#">SPO Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="dashboard-section">
+    <div class="chart-container1">
+        <h3>FSADM Revenue Trend (31st Mar Exch)</h3>
+        <canvas id="revenueTrendChart"></canvas>
+    </div>
+
+    <div class="chart-container1">
+        <h3>FSADM Utilization/Head Count</h3>
+        <canvas id="utilizationChart"></canvas>
+    </div>
+    <div class="chart-container1">
+        <h3>FSADM Peak Prod HC Trend</h3>
+        <canvas id="peakProdChart"></canvas>
+    </div>
+
+    <div class="chart-pie">
+        <h3>FSADM Pending Billing</h3>
+        <canvas id="pendingBillingChart"></canvas>
+    </div>
+    <div class="chart-pie">
+        <h3>FSADM Pre-Production</h3>
+        <canvas id="preProductionChart"></canvas>
+    </div>
+    <div class="chart-pie">
+        <h3>FSADM Demand Data</h3>
+        <canvas id="demandDataChart"></canvas>
+    </div>
+    <div class="chart-container1">
+        <h3>FSADM Role Mix</h3>
+        <canvas id="roleMixChart"></canvas>
+    </div>
+
+    <div class="chart-container1">
+        <h3>FSADM US Visa Utilization</h3>
+        <canvas id="visaUtilizationChart"></canvas>
+    </div>
+    <div class="chart-container1">
+        <h3>FSADM Onsite Bench</h3>
+        <canvas id="onsiteBenchChart"></canvas>
+    </div>
+
+</section>
+<script src="scripts.js"></script>
+</body>
+</html>

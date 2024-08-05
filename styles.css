@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+
+header {
+    background-color: #0072ce ;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-family:monospace;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.dashboard-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center; /* Center the items horizontally */
+}
+
+.chart-container h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+.chart-container1 {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-margin: 10px;
+    flex: 1 1 30%; /* Change to 30% to ensure 3 charts per row */
+    margin: 1rem;
+    min-width: 300px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+.chart-pie {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-margin: 100px;
+    flex: 1 1 30%; /* Change to 30% to ensure 3 charts per row */
+    margin: 1rem;
+    min-width: 300px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .chart-container {
+        flex: 1 1 45%; /* Adjust to 45% for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .chart-container {
+        flex: 1 1 100%; /* Full width for small screens */
+    }
+}
